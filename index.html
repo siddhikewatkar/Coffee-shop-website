@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+    </style>
+    <!-- font awesome link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- link for swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  #d82a70c5 -->
+    <!-- Header / Navbar -->
+    <header class="bg-[#3b141c] fixed w-[100%] z-[5]">
+      <nav
+        id="navbar-section-content"
+        class="flex items-center justify-between px-5 py-5"
+      >
+        <a href="#" id="nav-logo">
+          <h2 id="logo-text" class="font-semibold text-white text-4xl px-10">
+            ☕ Coffee
+          </h2>
+        </a>
+
+        <ul id="nav-menu" class="text-white flex gap-3 px-9">
+          <button
+            id="menu-close-button"
+            class="fas fa-times text-black absolute right-8 top-8"
+          ></button>
+          <li id="nav-item">
+            <a href="#" id="nav-link">Home</a>
+          </li>
+          <li id="nav-item">
+            <a href="#about" id="nav-link">About</a>
+          </li>
+          <li id="nav-item">
+            <a href="#menu" id="nav-link">Menu</a>
+          </li>
+          <li id="nav-item">
+            <a href="#testimonials" id="nav-link">Testimonials</a>
+          </li>
+          <li id="nav-item">
+            <a href="#gallery" id="nav-link">Gallery</a>
+          </li>
+          <li id="nav-item">
+            <a href="#contact" id="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars text-white"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section id="hero-section" class="min-h-[100vh] bg-[#3b141c]">
+        <div
+          id="section-content"
+          class="flex items-center min-h-[100vh] text-white justify-between"
+        >
+          <div id="hero-details">
+            <h2 id="title" class="font-bold text-[2.3rem] text-[#f3961c]">
+              Best Coffee
+            </h2>
+            <h3
+              id="subtitle"
+              class="font-semibold text-[2rem] mt-2 max-w-[70%]"
+            >
+              Make your day great with our special Coffee!
+            </h3>
+            <p id="description" class="max-w-[70%] mt-6 mb-10 text-[1.12rem]">
+              Welcome to our coffee paradise, where every bean tells a story and
+              every cup sparks joy.
+            </p>
+
+            <div id="buttons" class="font-medium flex gap-6">
+              <a
+                href="#"
+                id="button order-now"
+                class="py-2.5 px-[26px] text-[#3b141c] bg-[#f3961c] rounded-[30px] border-2 border-transparent hover:text-white hover:border-white hover:bg-transparent"
+                >Order Now</a
+              >
+
+              <a
+                href="#"
+                id="button contact-us"
+                class="py-2.5 px-[26px] bg-[#f3961c] rounded-[30px] border-2 border-transparent text-white border-white bg-transparent hover:text-[#3b141c] hover:border-[#f3961c] hover:bg-[#f3961c]"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div id="hero-image-wrapper" class="max-w-lg mr-8">
+            <img src="coffeecup.png" alt="Hero" id="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="py-28 px-0 bg-[#eed1d6]">
+        <div
+          id="section-content"
+          class="flex items-center gap-12 justify-between"
+        >
+          <div id="about-image-wrapper">
+            <img
+              src="about.jpg"
+              alt="About"
+              id="about-image"
+              class="w-[400px] h-[400px] object-cover rounded-[50%]"
+            />
+          </div>
+          <div id="about-details" class="max-w-[50%]">
+            <h2
+              id="section-title"
+              class="font-semibold text-[2rem] text-center p-[60px 0 100px] uppercase"
+            >
+              About Us
+            </h2>
+            <p id="text" class="leading-7 text-center text-[1.12rem]">
+              At Coffee House in Berndorf, Germany, we pride ourselves on being
+              a go-to destination for coffee lovers and conversation seekers
+              alike. We're dedicated to providing an exceptional coffee
+              experience in a cozy and inviting atmosphere, where guests can
+              relax, unwind, and enjoy their time in comfort.
+            </p>
+            <div
+              id="social-link-list"
+              class="flex gap-6 justify-center text-[#3b141c] text-[1.5rem]"
+            >
+              <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                <i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu section -->
+      <section id="menu" class="bg-[#252525] text-white">
+        <h2
+          id="section-title"
+          class="font-semibold text-[2rem] text-center uppercase pb-12"
+        >
+          Our Menu
+        </h2>
+        <div id="section-content">
+          <ul
+            id="menu-list"
+            class="flex flex-wrap items-center gap-28 justify-between"
+          >
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="Hotbeve.png" alt="Hot Beve" id="menu-image" />
+                <h3 id="name">Hot Beverages</h3>
+                <p id="text">
+                  Wide range of Steaming hot coffee to make you fresh and light.
+                </p>
+              </div>
+            </li>
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="coldbev.png" alt="Cold Beve" id="menu-image" />
+                <h3 id="name">Cold Beverages</h3>
+                <p id="text">Creamy and frothy cold coffee to make you cool.</p>
+              </div>
+            </li>
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="refresh.png" alt="Refresh" id="menu-image" />
+                <h3 id="name">Refreshment</h3>
+                <p id="text">
+                  Fruit and icy refreshing drink to make you feel refresh.
+                </p>
+              </div>
+            </li>
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="combo.png" alt="Specailcom" id="menu-image" />
+                <h3 id="name">Special Combos</h3>
+                <p id="text">Your favorite eating and drinking combinatios.</p>
+              </div>
+            </li>
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="dessert.png" alt="Dess" id="menu-image" />
+                <h3 id="name">Dessert</h3>
+                <p id="text">
+                  Satiate your palate and take you on a culinary treat
+                </p>
+              </div>
+            </li>
+            <li id="menu-item">
+              <div id="menu-details">
+                <img src="burger.png" alt="burger" id="menu-image" />
+                <h3 id="name">Burger & French Fries</h3>
+                <p id="text">Quich bites to satisfy our small size hunger.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- testimonals section -->
+      <section id="testimonials" class="bg-[#faf4f5]">
+        <h2
+          id="section-title"
+          class="font-semibold text-[2rem] text-center uppercase pb-10 pt-5"
+        >
+          Testimonials
+        </h2>
+        <div id="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                
+                <li class="testimonial swiper-slide">
+                  <img src="user5.jpg" alt="User" id="user-image" />
+                  <h3 id="name">Sarah Johnson</h3>
+                  <i id="feedback"
+                    >"Loved the French roast. Perfectly balanced and rich. Will
+                    order again!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="user4.jpg" alt="User" id="user-image" />
+                  <h3 id="name">James Wilson</h3>
+                  <i id="feedback"
+                    >"Great espresso blend! Smooth and bold flavor. Fast
+                    shipping too!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide" >
+                  <img src="user3.jpg" alt="User" id="user-image" />
+                  <h3 id="name">Michael Brown</h3>
+                  <i id="feedback"
+                    >"Fantastic mocha flavor. Fresh and aromatic. Quick
+                    shipping!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide" >
+                  <img src="user2.jpg" alt="User" id="user-image" />
+                  <h3 id="name">Emily Harris</h3>
+                  <i id="feedback"
+                    >"Excellent quality! Fresh beans and quick delivery. Highly
+                    recommend."</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="user1.jpg" alt="User" id="user-image" />
+                  <h3 id="name">Anthony Thomson</h3>
+                  <i id="feedback"
+                    >"Best decaf I've tried! Smooth and flavorful. Arrived
+                    promptly."</i
+                  >
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery section -->
+       <section id="gallery" class="">
+        <h2 id="section-title" class="font-semibold text-[2rem] text-center uppercase pb-10 pt-5">Gallery</h2>
+        <div id="section-content">
+          <ul id="gallery-list" class="flex flex-wrap gap-8">
+            <li id="gallery-item">
+              <img src="gallery1.jpg" alt="Gallery" id="gallery-image">
+            </li>
+            <li id="gallery-item">
+              <img src="gallery2.jpg" alt="Gallery" id="gallery-image">
+            </li>
+            <li id="gallery-item">
+              <img src="gallery3.jpg" alt="Gallery" id="gallery-image">
+            </li>
+            <li id="gallery-item">
+              <img src="gallery4.jpg" alt="Gallery" id="gallery-image">
+            </li>
+            <li id="gallery-item">
+              <img src="gallery5.jpg" alt="Gallery" id="gallery-image">
+            </li>
+            <li id="gallery-item">
+              <img src="gallery6.jpg" alt="Gallery" id="gallery-image">
+            </li>
+          </ul>
+        </div>
+       </section>
+      
+      <!-- Contact section -->
+       <section id="contact" class="bg-[#faf4f5]">
+        <h2 id="section-title" class="font-semibold text-[2rem] text-center uppercase pb-10 pt-5">Contact Us </h2>
+        <div id="section-content">
+          <ul id="contact-info-list">
+            <li id="contact-info">
+              <i class="fa fa-location-crosshairs"></i>
+              <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+            </li>
+            <li id="contact-info">
+              <i class="fa fa-envelope"></i>
+              <p>info@coffeeshopwebsite.com</p>
+            </li>
+            <li id="contact-info">
+              <i class="fa fa-phone"></i>
+              <p>(123) 456-78909</p>
+              <li id="contact-info">
+                <i class="fa fa-clock"></i>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+              </li>
+              <li id="contact-info">
+                <i class="fa fa-clock"></i>
+                <p>Sunday: 10:00 AM - 3:00 PM</p>
+              </li>
+              <li id="contact-info">
+                <i class="fa fa-globe"></i>
+                <p>www.siddhiiscute.com</p>
+              </li>
+            </li>
+          </ul>
+
+          <form action="#" id="contact-form">
+            <input type="text" placeholder="Your name" id="form-input" required>
+            <input type="text" placeholder="Your email" id="form-input" required>
+            <textarea placeholder="Your message" id="form-input" required></textarea>
+            <button id="submit-button">Submit</button>
+          </form>
+        </div>
+       </section>
+
+       <!-- footer -->
+        <footer>
+          <footer id="footer-section" class="bg-[#252525] py-5 px-0">
+            <div id="section-content" class="flex items-center justify-between">
+              <p id="copyright-text">© 2024 Coffee Shop</p>
+
+              <div id="social-link-list" class="flex gap-6">
+                <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                  <i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" id="social-link" class="hover:text-[#f3961c]">
+                  <i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+
+              <p id="policy-test">
+                <a href="#" id="policy-link">Privacy policy</a>
+                <span class="separator"></span>
+                <a href="#" id="policy-link">Refund policy</a>
+
+              </p>
+            </div>
+          </footer>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>  
+    <script src="script.js"></script>
+  </body>
+</html>
